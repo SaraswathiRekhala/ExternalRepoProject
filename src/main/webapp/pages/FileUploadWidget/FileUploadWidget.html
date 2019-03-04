@@ -1,0 +1,36 @@
+<wm-page data-ng-controller="FileUploadWidgetPageController" pagetitle="File Upload Widget" name="page1">
+    <wm-header content="header" name="header1"></wm-header>
+    <wm-top-nav content="topnav" name="top_nav1"></wm-top-nav>
+    <wm-content name="content1">
+        <wm-left-panel columnwidth="2" content="leftnav" name="left_panel1"></wm-left-panel>
+        <wm-page-content columnwidth="10" name="page_content1">
+            <wm-fileupload name="fileupload1" service="FileService" operation="uploadFile"></wm-fileupload>
+            <wm-list listclass="list-group" template="true" itemsperrow="xs-2 sm-2 md-2 lg-2" class="list-card" name="listFilesList1" dataset="bind:Variables.JS_listFiles.dataSet" navigation="Basic">
+                <wm-listtemplate layout="media" name="listtemplate1">
+                    <wm-card name="card1">
+                        <wm-card-content fontsize="0.8" fontunit="em" name="card_content1">
+                            <wm-layoutgrid columns="2" name="layoutgrid1">
+                                <wm-gridrow name="gridrow1">
+                                    <wm-gridcolumn colwidth="6" columnwidth="6" class="col-xs-6" name="gridcolumn1">
+                                        <wm-picture name="Picture" width="100%" picturesource="bind:Variables.JS_listFiles.dataSet.inlinePath"></wm-picture>
+                                    </wm-gridcolumn>
+                                    <wm-gridcolumn colwidth="6" columnwidth="6" padding="unset 1.25em" class="col-xs-6" name="gridcolumn2">
+                                        <wm-label name="ID" caption="bind:Variables.JS_listFiles.dataSet.name" class="text-muted p" margin="unset unset 0px unset" whitespace="nowrap"></wm-label>
+                                        <wm-label name="Name" caption="bind:Variables.JS_listFiles.dataSet.path" class="h4" margin="0px unset" whitespace="nowrap"></wm-label>
+                                        <wm-label name="JobTitle" caption="bind:Variables.JS_listFiles.dataSet.size" class="h5" margin="0px unset unset unset" whitespace="nowrap"></wm-label>
+                                        <wm-label name="Department" caption="bind:Variables.JS_listFiles.dataSet.type" class="p text-muted" margin="unset unset 0px unset" whitespace="nowrap"></wm-label>
+                                        <wm-anchor name="PhoneNumber" caption="" class="h5" hyperlink="tel:" margin="0px unset" whitespace="nowrap"></wm-anchor>
+                                        <wm-anchor name="EmailID" class="p text-muted" hyperlink="mailto://" caption="" whitespace="nowrap"></wm-anchor>
+                                    </wm-gridcolumn>
+                                </wm-gridrow>
+                            </wm-layoutgrid>
+                        </wm-card-content>
+                    </wm-card>
+                </wm-listtemplate>
+            </wm-list>
+            <wm-button class="btn-default" caption="Delete File" type="button" margin="unset 0.5em" name="button1" on-click="Variables.JS_deleteFile.invoke()"></wm-button>
+            <wm-button class="btn-default" caption="Download File" type="button" margin="unset 0.5em" name="button2" on-click="Variables.JS_getDownloadFile.invoke()"></wm-button>
+        </wm-page-content>
+    </wm-content>
+    <wm-footer content="footer" name="footer1"></wm-footer>
+</wm-page>
