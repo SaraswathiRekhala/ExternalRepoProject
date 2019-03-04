@@ -1,0 +1,49 @@
+{
+  "FdaServiceInvoke" : {
+    "_id" : "wm-FdaServiceInvoke-wm.ServiceVariable-1551698847373",
+    "name" : "FdaServiceInvoke",
+    "owner" : "Page",
+    "category" : "wm.ServiceVariable",
+    "dataBinding" : [ {
+      "target" : "search",
+      "value" : "patient.drug.openfda.pharm_class_epc:\"nonsteroidal+anti-inflammatory+drug\"",
+      "type" : "java.lang.String"
+    }, {
+      "target" : "count",
+      "value" : "patient.reaction.reactionmeddrapt.exact",
+      "type" : "java.lang.String"
+    } ],
+    "type" : "fdaService.RootResponse",
+    "service" : "fdaService",
+    "operation" : "invoke",
+    "operationId" : "fdaService_RestServiceVirtualController-invoke",
+    "operationType" : "get",
+    "serviceType" : "RestService",
+    "dataSet" : [ ],
+    "isList" : false,
+    "maxResults" : 20,
+    "startUpdate" : true,
+    "autoUpdate" : true,
+    "inFlightBehavior" : "executeLast",
+    "transformationRequired" : false,
+    "saveInPhonegap" : false,
+    "isDefault" : true,
+    "controller" : "RestServiceVirtual"
+  },
+  "NyseIndexService" : {
+    "_id" : "wm-NyseIndexService-wm.WebSocketVariable-1551698863994",
+    "name" : "NyseIndexService",
+    "owner" : "Page",
+    "category" : "wm.WebSocketVariable",
+    "dataBinding" : [ ],
+    "service" : "nyseIndexService",
+    "operationId" : "nyseIndexService_WebSocketServiceVirtualController-invoke",
+    "dataSet" : [ ],
+    "type" : "nyseIndexService.RootResponse",
+    "isDefault" : false,
+    "isList" : false,
+    "startUpdate" : true,
+    "dataUpdateStrategy" : "append",
+    "dataLimit" : 50
+  }
+}

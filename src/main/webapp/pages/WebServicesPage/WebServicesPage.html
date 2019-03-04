@@ -1,0 +1,18 @@
+<wm-page data-ng-controller="WebServicesPagePageController" pagetitle="Web Services Page" name="page1">
+    <wm-header content="header" name="header1"></wm-header>
+    <wm-top-nav content="topnav" name="top_nav1"></wm-top-nav>
+    <wm-content name="content1">
+        <wm-left-panel columnwidth="2" content="leftnav" name="left_panel1"></wm-left-panel>
+        <wm-page-content columnwidth="10" name="page_content1">
+            <wm-table name="fdaServiceTable1" title="" dataset="bind:Variables.FdaServiceInvoke.dataSet.results" navigation="Basic">
+                <wm-table-column binding="count" caption="Count" pcdisplay="true" mobiledisplay="true" type="integer"></wm-table-column>
+                <wm-table-column binding="term" caption="Term" pcdisplay="true" mobiledisplay="true" type="string"></wm-table-column>
+            </wm-table>
+            <wm-table name="invokeTable1" title="" dataset="bind:Variables.NyseIndexService.dataSet" navigation="Basic">
+                <wm-table-column binding="time" caption="Time" pcdisplay="true" mobiledisplay="true" type="long"></wm-table-column>
+                <wm-table-column binding="value" caption="Value" pcdisplay="true" mobiledisplay="true" type="integer"></wm-table-column>
+            </wm-table>
+        </wm-page-content>
+    </wm-content>
+    <wm-footer content="footer" name="footer1"></wm-footer>
+</wm-page>

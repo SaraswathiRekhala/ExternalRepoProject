@@ -34,6 +34,20 @@
             </resource>
             <resource>
                 <filtering>true</filtering>
+                <directory>services/fdaService/src</directory>
+                <excludes>
+                    <exclude>**/*.java</exclude>
+                </excludes>
+            </resource>
+            <resource>
+                <filtering>true</filtering>
+                <directory>services/nyseIndexService/src</directory>
+                <excludes>
+                    <exclude>**/*.java</exclude>
+                </excludes>
+            </resource>
+            <resource>
+                <filtering>true</filtering>
                 <directory>services/securityService/src</directory>
                 <excludes>
                     <exclude>**/*.java</exclude>
@@ -125,6 +139,8 @@
                                 <source>services/CascadeDB/src</source>
                                 <source>services/DB2_HRDB/src</source>
                                 <source>services/actordb/src</source>
+                                <source>services/fdaService/src</source>
+                                <source>services/nyseIndexService/src</source>
                                 <source>services/securityService/src</source>
                             </sources>
                         </configuration>

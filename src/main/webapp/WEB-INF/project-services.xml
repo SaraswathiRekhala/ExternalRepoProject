@@ -3,5 +3,7 @@
     <import resource="classpath:CascadeDB.spring.xml"/>
     <import resource="classpath:DB2_HRDB.spring.xml"/>
     <import resource="classpath:actordb.spring.xml"/>
+    <import resource="classpath:fdaService.spring.xml"/>
+    <import resource="classpath:nyseIndexService.spring.xml"/>
     <import resource="classpath:securityService.spring.xml"/>
 </beans>
