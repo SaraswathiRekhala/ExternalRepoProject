@@ -15,6 +15,17 @@
     } ],
     "operation" : "toast"
   },
+  "goToPage_FilterCriteriaPage" : {
+    "_id" : "wm-goToPage_FilterCriteriaPage-wm.NavigationVariable-1551698607037",
+    "name" : "goToPage_FilterCriteriaPage",
+    "owner" : "App",
+    "category" : "wm.NavigationVariable",
+    "dataBinding" : [ ],
+    "operation" : "gotoPage",
+    "pageName" : "FilterCriteriaPage",
+    "dataSet" : [ ],
+    "pageTransitions" : "none"
+  },
   "goToPage_Main" : {
     "_id" : "wm-wm.NavigationVariable1389180517517",
     "name" : "goToPage_Main",

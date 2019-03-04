@@ -1,0 +1,118 @@
+{
+  "username" : "root",
+  "password" : "7b6a43524a122c0c6e6166771a13057c4838313a6b124c1a",
+  "url" : "jdbc:mysql://54.200.76.229:3306/CascadeDB?useUnicode=yes&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull",
+  "driverClass" : "com.mysql.jdbc.Driver",
+  "dialect" : "com.wavemaker.runtime.data.dialect.MySQLDialect",
+  "serviceId" : "CascadeDB",
+  "packageName" : "com.externalrepoproject.cascadedb",
+  "dbType" : "MySQL",
+  "host" : "54.200.76.229",
+  "dbName" : "CascadeDB",
+  "port" : "3306",
+  "schemaName" : null,
+  "tableFilter" : [ {
+    "table" : "BLOBHIDDEN",
+    "schema" : null
+  }, {
+    "table" : "child1",
+    "schema" : null
+  }, {
+    "table" : "COMPOSITE_TABLE",
+    "schema" : null
+  }, {
+    "table" : "FILTER_TABLE",
+    "schema" : null
+  }, {
+    "table" : "MANY2ONE_C1",
+    "schema" : null
+  }, {
+    "table" : "MANY2ONE_COMPOSITE_C",
+    "schema" : null
+  }, {
+    "table" : "MANY2ONE_COMPOSITE_C1",
+    "schema" : null
+  }, {
+    "table" : "MANY2ONE_P",
+    "schema" : null
+  }, {
+    "table" : "ONE2MANY_COMPOSITE_P",
+    "schema" : null
+  }, {
+    "table" : "ONE2MANY_COMPOSITE_P1",
+    "schema" : null
+  }, {
+    "table" : "ONE2ONE_C",
+    "schema" : null
+  }, {
+    "table" : "ONE2ONE_C1",
+    "schema" : null
+  }, {
+    "table" : "ONE2ONE_C2",
+    "schema" : null
+  }, {
+    "table" : "ONE2ONE_C3",
+    "schema" : null
+  }, {
+    "table" : "ONE2ONE_COMP_UNIQUE_C",
+    "schema" : null
+  }, {
+    "table" : "ONE2ONE_COMP_UNIQUE_P",
+    "schema" : null
+  }, {
+    "table" : "ONE2ONE_COMPOSITE_C",
+    "schema" : null
+  }, {
+    "table" : "ONE2ONE_COMPOSITE_P",
+    "schema" : null
+  }, {
+    "table" : "ONE2ONE_P",
+    "schema" : null
+  }, {
+    "table" : "ONE2ONE_P_MULTIPLE_C",
+    "schema" : null
+  }, {
+    "table" : "ONE2ONE_UC_C",
+    "schema" : null
+  }, {
+    "table" : "ONE2ONE_UC_P",
+    "schema" : null
+  }, {
+    "table" : "ONE2ONEUC_C_NOTNULL",
+    "schema" : null
+  }, {
+    "table" : "ONE2ONEUC_P_NOTNULL",
+    "schema" : null
+  }, {
+    "table" : "parent1",
+    "schema" : null
+  }, {
+    "table" : "SELF_RELATION_TABLE",
+    "schema" : null
+  }, {
+    "table" : "service",
+    "schema" : null
+  }, {
+    "table" : "Service_Ref",
+    "schema" : null
+  }, {
+    "table" : "VIEW_ONE2ONE_C",
+    "schema" : null
+  } ],
+  "schemaFilter" : [ ],
+  "impersonateUser" : false,
+  "activeDirectoryDomain" : null,
+  "hbm2ddl" : "none",
+  "maxPageSize" : 100,
+  "minPoolSize" : 2,
+  "maxPoolSize" : 4,
+  "transactionTimeout" : 30,
+  "dataSourceType" : "WM_MANAGED_DATASOURCE",
+  "jndiName" : "",
+  "reloadInfo" : {
+    "reload" : false,
+    "reason" : null,
+    "message" : null
+  },
+  "readOnly" : false
+}

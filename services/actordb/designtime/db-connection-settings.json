@@ -1,0 +1,103 @@
+{
+  "username" : "root",
+  "password" : "7b6a43524a322c0c6e6166771a1378700d662158",
+  "url" : "jdbc:mysql://54.200.76.229:3307/actordb?useUnicode=yes&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull",
+  "driverClass" : "com.mysql.jdbc.Driver",
+  "dialect" : "com.wavemaker.runtime.data.dialect.MySQLDialect",
+  "serviceId" : "actordb",
+  "packageName" : "com.externalrepoproject.actordb",
+  "dbType" : "MySQL",
+  "host" : "54.200.76.229",
+  "dbName" : "actordb",
+  "port" : "3307",
+  "schemaName" : null,
+  "tableFilter" : [ {
+    "table" : "actor",
+    "schema" : null
+  }, {
+    "table" : "actor_info",
+    "schema" : null
+  }, {
+    "table" : "address",
+    "schema" : null
+  }, {
+    "table" : "category",
+    "schema" : null
+  }, {
+    "table" : "city",
+    "schema" : null
+  }, {
+    "table" : "country",
+    "schema" : null
+  }, {
+    "table" : "customer",
+    "schema" : null
+  }, {
+    "table" : "customer_list",
+    "schema" : null
+  }, {
+    "table" : "film",
+    "schema" : null
+  }, {
+    "table" : "film_actor",
+    "schema" : null
+  }, {
+    "table" : "film_category",
+    "schema" : null
+  }, {
+    "table" : "film_list",
+    "schema" : null
+  }, {
+    "table" : "film_text",
+    "schema" : null
+  }, {
+    "table" : "inventory",
+    "schema" : null
+  }, {
+    "table" : "language",
+    "schema" : null
+  }, {
+    "table" : "mytable",
+    "schema" : null
+  }, {
+    "table" : "nicer_but_slower_film_list",
+    "schema" : null
+  }, {
+    "table" : "payment",
+    "schema" : null
+  }, {
+    "table" : "rental",
+    "schema" : null
+  }, {
+    "table" : "sales_by_film_category",
+    "schema" : null
+  }, {
+    "table" : "sales_by_store",
+    "schema" : null
+  }, {
+    "table" : "staff",
+    "schema" : null
+  }, {
+    "table" : "staff_list",
+    "schema" : null
+  }, {
+    "table" : "store",
+    "schema" : null
+  } ],
+  "schemaFilter" : [ ],
+  "impersonateUser" : false,
+  "activeDirectoryDomain" : null,
+  "hbm2ddl" : "none",
+  "maxPageSize" : 100,
+  "minPoolSize" : 2,
+  "maxPoolSize" : 4,
+  "transactionTimeout" : 30,
+  "dataSourceType" : "WM_MANAGED_DATASOURCE",
+  "jndiName" : "",
+  "reloadInfo" : {
+    "reload" : false,
+    "reason" : null,
+    "message" : null
+  },
+  "readOnly" : true
+}

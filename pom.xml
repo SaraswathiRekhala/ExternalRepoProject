@@ -13,6 +13,27 @@
             </resource>
             <resource>
                 <filtering>true</filtering>
+                <directory>services/CascadeDB/src</directory>
+                <excludes>
+                    <exclude>**/*.java</exclude>
+                </excludes>
+            </resource>
+            <resource>
+                <filtering>true</filtering>
+                <directory>services/DB2_HRDB/src</directory>
+                <excludes>
+                    <exclude>**/*.java</exclude>
+                </excludes>
+            </resource>
+            <resource>
+                <filtering>true</filtering>
+                <directory>services/actordb/src</directory>
+                <excludes>
+                    <exclude>**/*.java</exclude>
+                </excludes>
+            </resource>
+            <resource>
+                <filtering>true</filtering>
                 <directory>services/securityService/src</directory>
                 <excludes>
                     <exclude>**/*.java</exclude>
@@ -101,6 +122,9 @@
                         </goals>
                         <configuration>
                             <sources>
+                                <source>services/CascadeDB/src</source>
+                                <source>services/DB2_HRDB/src</source>
+                                <source>services/actordb/src</source>
                                 <source>services/securityService/src</source>
                             </sources>
                         </configuration>
@@ -268,6 +292,23 @@
             <artifactId>javax.servlet-api</artifactId>
             <version>3.1.0</version>
             <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>5.1.38</version>
+        </dependency>
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-core</artifactId>
+            <version>5.2.17.WM</version>
+        </dependency>
+        <dependency>
+            <groupId>db2jcc4__1_</groupId>
+            <artifactId>db2jcc4__1_</artifactId>
+            <version>1.0</version>
+            <scope>system</scope>
+            <systemPath>${project.lib.directory}/db2jcc4__1_.jar</systemPath>
         </dependency>
     </dependencies>
     <dependencyManagement>

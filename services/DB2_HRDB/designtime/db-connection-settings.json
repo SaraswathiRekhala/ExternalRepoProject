@@ -1,0 +1,43 @@
+{
+  "username" : "db2inst1",
+  "password" : "7b6a43524a2429176262362e4c5c783a172653",
+  "url" : "jdbc:db2://54.67.89.150:50000/HRDB:progressiveStreaming=2;",
+  "driverClass" : "com.ibm.db2.jcc.DB2Driver",
+  "dialect" : "org.hibernate.dialect.DB2Dialect",
+  "serviceId" : "DB2_HRDB",
+  "packageName" : "com.externalrepoproject.db2_hrdb",
+  "dbType" : "DB2",
+  "host" : "54.67.89.150",
+  "dbName" : "HRDB",
+  "port" : "50000",
+  "schemaName" : "DB2INST1",
+  "tableFilter" : [ {
+    "table" : "DEPARTMENT",
+    "schema" : "DB2INST1"
+  }, {
+    "table" : "EMPLOYEE",
+    "schema" : "DB2INST1"
+  }, {
+    "table" : "USER",
+    "schema" : "DB2INST1"
+  }, {
+    "table" : "VACATION",
+    "schema" : "DB2INST1"
+  } ],
+  "schemaFilter" : [ "DB2INST1" ],
+  "impersonateUser" : false,
+  "activeDirectoryDomain" : null,
+  "hbm2ddl" : "none",
+  "maxPageSize" : 100,
+  "minPoolSize" : 2,
+  "maxPoolSize" : 4,
+  "transactionTimeout" : 30,
+  "dataSourceType" : "WM_MANAGED_DATASOURCE",
+  "jndiName" : "",
+  "reloadInfo" : {
+    "reload" : false,
+    "reason" : null,
+    "message" : null
+  },
+  "readOnly" : true
+}
